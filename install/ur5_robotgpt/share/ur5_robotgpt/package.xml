@@ -3,7 +3,7 @@
 <package format="3">
   <name>ur5_robotgpt</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>The UR5 RobotGPT package for controlling and integrating a UR5e robot</description>
   <maintainer email="mdether0056@gmail.com">eth</maintainer>
   <license>TODO: License declaration</license>
 

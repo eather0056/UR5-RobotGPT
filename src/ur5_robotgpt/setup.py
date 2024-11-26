@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'control_robot = ur5_robotgpt.control_robot:main'
+            'control_robot = ur5_robotgpt.control_robot:main',
+            'move_to_xyz = ur5_robotgpt.move_to_xyz:main'
         ],
     },
 )
