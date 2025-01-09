@@ -1,0 +1,8 @@
+msg/Detection.idl
+msg/Detection.msg
+msg/Detections.idl
+msg/Detections.msg
+srv/ProcessCoordinates.idl
+srv/ProcessCoordinates.srv
+srv/ProcessCoordinates_Request.msg
+srv/ProcessCoordinates_Response.msg

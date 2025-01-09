@@ -64,7 +64,7 @@ class UR5eControl(Node):
         # Create a trajectory point
         point = JointTrajectoryPoint()
         point.positions = joint_positions  # Assign as a Python list
-        point.time_from_start.sec = 5  # Move to position in 5 seconds
+        point.time_from_start.sec = 10  # Move to position in 5 seconds
 
         # Add the point to the trajectory
         traj_msg.points = [point]
@@ -81,10 +81,16 @@ def main():
     control_node = UR5eControl()
 
     # Specify the desired target position and orientation (roll, pitch, yaw in radians)
-    x = 0.4  # X-coordinate
-    y = 0.2  # Y-coordinate
-    z = 0.5  # Z-coordinate
-    orientation = (0.0, 0.0, 0.0)  # Roll, pitch, yaw in radians
+    x = 0.20  # X-coordinate
+    y = 0.0  # Y-coordinate
+    z = 0.21  # Z-coordinate
+
+    # x = 0.13460603431544818
+    # y = 0.1862077667169872
+    # z = 0.9900000691413879
+
+
+    orientation = (0, 0, 0)  # Roll, pitch, yaw in radians
 
     # Move the robot to the specified position and orientation
     control_node.move_to_xyz(x, y, z, orientation)

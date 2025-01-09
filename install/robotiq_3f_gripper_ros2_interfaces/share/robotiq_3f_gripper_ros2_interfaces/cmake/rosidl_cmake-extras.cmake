@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(robotiq_3f_gripper_ros2_interfaces_IDL_FILES "msg/Robotiq3FGripperInputRegisters.idl;msg/Robotiq3FGripperOutputRegisters.idl;srv/Robotiq3FGripperOutputService.idl;action/Robotiq3FGripperOutputGoal.idl")
+set(robotiq_3f_gripper_ros2_interfaces_INTERFACE_FILES "msg/Robotiq3FGripperInputRegisters.msg;msg/Robotiq3FGripperOutputRegisters.msg;srv/Robotiq3FGripperOutputService.srv;srv/Robotiq3FGripperOutputService_Request.msg;srv/Robotiq3FGripperOutputService_Response.msg;action/Robotiq3FGripperOutputGoal.action")

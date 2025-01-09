@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robotiq_3f_gripper_ros2_interfaces/action/Robotiq3FGripperOutputGoal.action
+// generated code does not contain a copyright notice
+
+#include "robotiq_3f_gripper_ros2_interfaces/msg/Robotiq3FGripperInputRegisters.idl"
+#include "robotiq_3f_gripper_ros2_interfaces/msg/Robotiq3FGripperOutputRegisters.idl"
+
+module robotiq_3f_gripper_ros2_interfaces {
+  module action {
+    struct Robotiq3FGripperOutputGoal_Goal {
+      robotiq_3f_gripper_ros2_interfaces::msg::Robotiq3FGripperOutputRegisters output_registers_goal;
+    };
+    struct Robotiq3FGripperOutputGoal_Result {
+      string result;
+    };
+    struct Robotiq3FGripperOutputGoal_Feedback {
+      robotiq_3f_gripper_ros2_interfaces::msg::Robotiq3FGripperInputRegisters input_registers;
+
+      robotiq_3f_gripper_ros2_interfaces::msg::Robotiq3FGripperOutputRegisters output_registers;
+    };
+  };
+};

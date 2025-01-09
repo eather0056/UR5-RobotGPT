@@ -1,0 +1,11 @@
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__ACTION__ROBOTIQ3_F_GRIPPER_OUTPUT_GOAL_HPP_
+#define ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__ACTION__ROBOTIQ3_F_GRIPPER_OUTPUT_GOAL_HPP_
+
+#include "robotiq_3f_gripper_ros2_interfaces/action/detail/robotiq3_f_gripper_output_goal__struct.hpp"
+#include "robotiq_3f_gripper_ros2_interfaces/action/detail/robotiq3_f_gripper_output_goal__builder.hpp"
+#include "robotiq_3f_gripper_ros2_interfaces/action/detail/robotiq3_f_gripper_output_goal__traits.hpp"
+
+#endif  // ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__ACTION__ROBOTIQ3_F_GRIPPER_OUTPUT_GOAL_HPP_

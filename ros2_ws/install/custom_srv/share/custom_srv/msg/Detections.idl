@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_srv/msg/Detections.msg
+// generated code does not contain a copyright notice
+
+#include "custom_srv/msg/Detection.idl"
+
+module custom_srv {
+  module msg {
+    struct Detections {
+      sequence<custom_srv::msg::Detection> detections;
+    };
+  };
+};

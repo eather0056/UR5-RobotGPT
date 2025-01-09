@@ -1,6 +1,1 @@
-planning_plugin: pilz_industrial_motion_planner/CommandPlanner
-request_adapters: ""
-default_planner_config: PTP
-capabilities: >-
-    pilz_industrial_motion_planner/MoveGroupSequenceAction
-    pilz_industrial_motion_planner/MoveGroupSequenceService
+/home/eth/UR5-RobotGPT/build/moveit_configs_utils/default_configs/pilz_industrial_motion_planner_planning.yaml

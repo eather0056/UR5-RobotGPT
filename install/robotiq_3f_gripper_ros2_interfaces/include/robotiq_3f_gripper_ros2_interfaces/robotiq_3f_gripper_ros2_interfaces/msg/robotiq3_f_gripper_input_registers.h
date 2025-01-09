@@ -1,0 +1,12 @@
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from robotiq_3f_gripper_ros2_interfaces:msg/Robotiq3FGripperInputRegisters.idl
+// generated code does not contain a copyright notice
+
+#ifndef ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__MSG__ROBOTIQ3_F_GRIPPER_INPUT_REGISTERS_H_
+#define ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__MSG__ROBOTIQ3_F_GRIPPER_INPUT_REGISTERS_H_
+
+#include "robotiq_3f_gripper_ros2_interfaces/msg/detail/robotiq3_f_gripper_input_registers__struct.h"
+#include "robotiq_3f_gripper_ros2_interfaces/msg/detail/robotiq3_f_gripper_input_registers__functions.h"
+#include "robotiq_3f_gripper_ros2_interfaces/msg/detail/robotiq3_f_gripper_input_registers__type_support.h"
+
+#endif  // ROBOTIQ_3F_GRIPPER_ROS2_INTERFACES__MSG__ROBOTIQ3_F_GRIPPER_INPUT_REGISTERS_H_

@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotiq_3f_gripper_ros2_interfaces/msg/Robotiq3FGripperOutputRegisters.msg
+// generated code does not contain a copyright notice
+
+
+module robotiq_3f_gripper_ros2_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "rACT: Action request (activation bit)." "\n"
+      "0x0 - Decativate gripper." "\n"
+      "0x1 - Activate gripper.")
+    struct Robotiq3FGripperOutputRegisters {
+      uint8 r_act;
+
+      @verbatim (language="comment", text=
+        "rMOD: Changes the gripper grasping mode." "\n"
+        "0x0 - Basic mode." "\n"
+        "0x1 - Pinch mode.")
+      uint8 r_mod;
+
+      @verbatim (language="comment", text=
+        "rGTO: \"Go To\" action moves the gripper fingers to the requested position." "\n"
+        "0x0 - Stop." "\n"
+        "0x1 - Go to the requested position.")
+      uint8 r_gto;
+
+      @verbatim (language="comment", text=
+        "rATR: Automatic release routine." "\n"
+        "0x0 - Stop." "\n"
+        "0x1 Emergency auto-release.")
+      uint8 r_atr;
+
+      @verbatim (language="comment", text=
+        "rPRA: Target position of the fingers." "\n"
+        "0x00 Minimum position (open)." "\n"
+        "0xFF Maximum position (close).")
+      uint8 r_pra;
+
+      @verbatim (language="comment", text=
+        "rSPA: Gripper closing or opening speed." "\n"
+        "Setting a speed will not initiate a motion." "\n"
+        "0x00 Minimum speed." "\n"
+        "0xFF Maximum speed.")
+      uint8 r_spa;
+
+      @verbatim (language="comment", text=
+        "rFRA: Final grasping force of the gripper." "\n"
+        "Setting a force will not initiate a motion." "\n"
+        "0x00 Minimum force." "\n"
+        "0xFF Maximum force.")
+      uint8 r_fra;
+    };
+  };
+};

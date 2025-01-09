@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_srv/srv/ProcessCoordinates.srv
+// generated code does not contain a copyright notice
+
+
+module custom_srv {
+  module srv {
+    struct ProcessCoordinates_Request {
+      int64 x;
+
+      int64 y;
+    };
+    struct ProcessCoordinates_Response {
+      double depth;
+    };
+  };
+};

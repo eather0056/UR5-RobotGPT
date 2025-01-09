@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/eth/UR5-RobotGPT/build/moveit_resources_prbt_support/ament_cmake_environment_hooks/path.dsv

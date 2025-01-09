@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robotiq_3f_gripper_ros2_interfaces/srv/Robotiq3FGripperOutputService.srv
+// generated code does not contain a copyright notice
+
+#include "robotiq_3f_gripper_ros2_interfaces/msg/Robotiq3FGripperOutputRegisters.idl"
+
+module robotiq_3f_gripper_ros2_interfaces {
+  module srv {
+    struct Robotiq3FGripperOutputService_Request {
+      robotiq_3f_gripper_ros2_interfaces::msg::Robotiq3FGripperOutputRegisters output_registers;
+    };
+    struct Robotiq3FGripperOutputService_Response {
+      boolean success;
+    };
+  };
+};

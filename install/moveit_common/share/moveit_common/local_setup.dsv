@@ -1,2 +1,1 @@
-source;share/moveit_common/environment/ament_prefix_path.sh
-source;share/moveit_common/environment/path.sh
+/home/eth/UR5-RobotGPT/build/moveit_common/ament_cmake_environment_hooks/local_setup.dsv

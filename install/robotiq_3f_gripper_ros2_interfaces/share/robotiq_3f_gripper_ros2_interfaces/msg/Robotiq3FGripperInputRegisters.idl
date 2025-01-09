@@ -1,0 +1,72 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotiq_3f_gripper_ros2_interfaces/msg/Robotiq3FGripperInputRegisters.msg
+// generated code does not contain a copyright notice
+
+
+module robotiq_3f_gripper_ros2_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "gACT : Initialization status, echo of the rACT bit (activation bit)." "\n"
+      "0x0 - Gripper reset." "\n"
+      "0x1 - Gripper activation.")
+    struct Robotiq3FGripperInputRegisters {
+      uint8 g_act;
+
+      @verbatim (language="comment", text=
+        "gMOD : Operation mode status, echo of the rMOD bits (grasping mode requested)." "\n"
+        "0x00 - Basic mode." "\n"
+        "0x01 - Pinch mode." "\n"
+        "0x02 - Wide mode." "\n"
+        "0x03 - Scissor mode.")
+      uint8 g_mod;
+
+      @verbatim (language="comment", text=
+        "gGTO : Action status. echo of the rGTO bit (go to bit)." "\n"
+        "0x0 - Stopped (or performing activation / grasping mode change / automatic release)" "\n"
+        "0x1 - Go to Position Request")
+      uint8 g_gto;
+
+      @verbatim (language="comment", text=
+        "gIMC : Gripper status, returns the current status of the Gripper." "\n"
+        "0x00 - Gripper is in reset (or automatic release) state. See Fault status if Gripper is activated." "\n"
+        "0x01 - Activation is in progress." "\n"
+        "0x02 - Mode change is in progress." "\n"
+        "0x03 - Activation and mode change are completed.")
+      uint8 g_imc;
+
+      @verbatim (language="comment", text=
+        "gSTA : Motion status, returns the current motion of the Gripper fingers." "\n"
+        "0x00 - Gripper is in motion towards requested position (only meaningful if gGTO = 1)" "\n"
+        "0x01 - Gripper is stopped. One or two fingers stopped before requested position" "\n"
+        "0x02 - Gripper is stopped. All fingers stopped before requested position" "\n"
+        "0x03 - Gripper is stopped. All fingers reached requested position")
+      uint8 g_sta;
+
+      @verbatim (language="comment", text=
+        "gFLT : Fault status returns general error messages useful for troubleshooting." "\n"
+        "  0x00 - No fault (fault LED off)" "\n"
+        "  Priority faults (fault LED off)" "\n"
+        "    0x05 - Action delayed, activation (reactivation) must be completed prior to action." "\n"
+        "    0x06 - Action delayed, mode change must be completed prior to action." "\n"
+        "    0x07 - The activation bit must be set prior to action." "\n"
+        "  Minor faults (fault LED continuous red)" "\n"
+        "    0x09 - The communication chip is not ready (may be booting)." "\n"
+        "    0x0A - Changing mode fault, interferences detected on Scissor (for less than 20 sec)." "\n"
+        "    0x0B - Automatic release in progress." "\n"
+        "  Major faults (fault LED blinking red) - Reset is required" "\n"
+        "    0x0D - Activation fault, verify that no interference or other error occurred." "\n"
+        "    0x0E - Changing mode fault, interferences detected on Scissor (for more than 20 sec)." "\n"
+        "    0x0F - Automatic release completed. Reset and activation is required.")
+      uint8 g_flt;
+
+      @verbatim (language="comment", text=
+        "gPRA : Echo of the requested position of the Gripper (rPRA)," "\n"
+        "  0x00 is minimum position (full opening) and" "\n"
+        "  0xFF is maximum position (full closing)." "\n"
+        "If commanding the Gripper in" "\n"
+        "  individual control mode, gPRA is the echo of finger A," "\n"
+        "  otherwise it is the general position requested to all fingers.")
+      uint8 g_pra;
+    };
+  };
+};
