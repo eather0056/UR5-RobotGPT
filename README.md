@@ -1,4 +1,4 @@
-# UR5 Robot Control and Object Manipulation
+ # UR5 Robot Control and Object Manipulation
 
 This repository provides a comprehensive framework for controlling a UR5e robotic arm, integrating object detection capabilities, and enabling advanced manipulation tasks. The setup includes ROS2, YOLO-based object detection, and a Robotiq 3-Finger Adaptive Gripper.
 
@@ -149,6 +149,9 @@ cd ~/UR5-RobotGPT/ros2_ws
 colcon build --merge-install
 source install/setup.bash
 ```
+## Project Demo
+
+[Watch the demo video on YouTube](https://youtube.com/shorts/i5nVuVOmrVQ?feature=share)
 
 ## License
 This repository is licensed under the MIT License. See `LICENSE` for details.
